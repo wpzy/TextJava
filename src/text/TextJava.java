@@ -17,6 +17,9 @@ public class TextJava {
 		Scanner scanner=new Scanner("hello world this is the test to test the function "
 				+ "of scanner");
 		List<String> result=new ArrayList<String>();
+		
+		scanner.useDelimiter("[ ,.]");
+		
 		while(scanner.hasNext()){
 			result.add(scanner.next());
 		}
